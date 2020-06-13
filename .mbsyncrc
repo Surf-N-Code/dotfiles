@@ -1,0 +1,84 @@
+
+
+
+IMAPStore norman-gmail-remote
+Host imap.gmail.com
+Port 993
+User ndilthey@gmail.com
+PassCmd "pass mutt-wizard-norman-gmail"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore norman-gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/norman-gmail/
+Inbox ~/.local/share/mail/norman-gmail/INBOX
+Flatten .
+
+Channel norman-gmail
+Expunge Both
+Master :norman-gmail-remote:
+Slave :norman-gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+# End profile
+
+
+IMAPStore juno-gmail-remote
+Host imap.gmail.com
+Port 993
+User dilthey.it.services@gmail.com
+PassCmd "pass mutt-wizard-juno-gmail"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore juno-gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/juno-gmail/
+Inbox ~/.local/share/mail/juno-gmail/INBOX
+Flatten .
+
+Channel juno-gmail
+Expunge Both
+Master :juno-gmail-remote:
+Slave :juno-gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+# End profile
+
+
+
+IMAPStore dm-norman-remote
+Host mail.your-server.de
+Port 993
+User norman@diltheymedia.com
+PassCmd "pass mutt-wizard-dm-norman"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore dm-norman-local
+Subfolders Verbatim
+Path ~/.local/share/mail/dm-norman/
+Inbox ~/.local/share/mail/dm-norman/INBOX
+Flatten .
+
+Channel dm-norman
+Expunge Both
+Master :dm-norman-remote:
+Slave :dm-norman-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+

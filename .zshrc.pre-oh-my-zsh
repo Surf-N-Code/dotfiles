@@ -1,0 +1,50 @@
+autoload -Uz compinit promptinit
+compinit
+promptinit
+
+setopt PROMPT_SUBST
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %#  '
+
+# vpn management
+_list-vpn-profiles () {
+    PATHS=(/etc/openvpn/client/*.conf)
+    FILENAMES=($PATHS[@]:t)
+    for FILE in $FILENAMES; do
+        echo $FILE|sed -s 's/.conf//'
+    done
+    return 0
+}
+vpn () {
+    if  [ "$2" = "up" ]; then
+        sudo systemctl start openvpn-client@$1.service
+        return 0
+    elif [ "$2" = "down" ]; then
+        sudo systemctl stop openvpn-client@$1.service
+        return 0
+    fi
+    for PROFILE in $(_list-vpn-profiles); do
+        if $(systemctl -q is-active openvpn-client@$PROFILE.service); then
+            STATUS=OK
+        else
+            STATUS=-
+        fi
+        printf "%-25s | %-5s\n" "$PROFILE" "$STATUS"
+    done
+    return 0
+}
+_vpn() {
+    _arguments '1:profile:->profiles' '::flag:->flags'
+    case "$state" in
+        profiles)
+            _values profile $(_list-vpn-profiles)
+            ;;
+        flags)
+            _values 'action' up down
+            ;;
+    esac
+}
+#compdef _vpn vpn
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
