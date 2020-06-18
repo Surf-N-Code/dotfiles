@@ -212,6 +212,14 @@ bindsym $mod+Escape mode "$mode_system"
 
 #custom binds norman
 bindsym $mod+t exec deepin-screen-recorder
+bindsym $mod+c exec chromium
+bindsym $mod+p exec phpstorm
+bindsym $mod+shift+S exec spotify
+#bindsym $mod+c exec chromium --new-window --app=http://192.168.255.8:9000/
 
+assign [class="Chromium"] $ws2
+assign [class="Google-chrome-beta"] $ws2
+assign [class="jetbrains-phpstorm"] $ws1
+for_window [class="Spotify"] move to workspace $ws4
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &amp;

@@ -11,21 +11,27 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/18.205.93.0
+~MSle0~/\/volume
 
 # Last Substitute Search Pattern:
-~MSle0~&yazio
+~MSle0&yazio
 
 # Last Substitute String:
 $back\/yazio
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1592071498,,"q"
 :wq
-|2,0,1591942368,,"wq"
+|2,0,1592476835,,"wq"
 :q!
-|2,0,1591881534,,"q!"
+|2,0,1592475672,,"q!"
+:q
+|2,0,1592471631,,"q"
+:237GG
+|2,0,1592468539,,"237GG"
+:.,.+14!
+|2,0,1592428222,,".,.+14!"
+:ew
+|2,0,1592130417,,"ew"
 :%s/yazio/back\/yazio/gc
 |2,0,1591880327,,"%s/yazio/back\\/yazio/gc"
 :%s/tester/deploy/g
@@ -78,6 +84,44 @@ $back\/yazio
 |2,0,1588610790,,".,.+1!"
 
 # Search String History (newest to oldest):
+?/\/volume
+|2,1,1592468661,47,"\\/volume"
+?/volume
+|2,1,1592468650,47,"volume"
+?/cpu
+|2,1,1592468616,47,"cpu"
+?/temperature
+|2,1,1592467767,47,"temperature"
+?/temperatur
+|2,1,1592467540,47,"temperatur"
+?/date
+|2,1,1592467454,47,"date"
+?/phpstorm
+|2,1,1592467286,47,"phpstorm"
+? \<label\>
+|2,1,1592466979,,"\\<label\\>"
+?/volume6
+|2,1,1592429149,47,"volume6"
+?/label
+|2,1,1592428876,47,"label"
+?/keyboard
+|2,1,1592428254,47,"keyboard"
+?/memory
+|2,1,1592428224,47,"memory"
+?/name
+|2,1,1592395139,47,"name"
+? \<2\>
+|2,1,1592337087,,"\\<2\\>"
+? \<bindsym\>
+|2,1,1592131657,,"\\<bindsym\\>"
+?/workspace
+|2,1,1592128792,47,"workspace"
+? @$
+|2,1,1592128738,,"@$"
+?/ls
+|2,1,1592073223,47,"ls"
+?/ls -la
+|2,1,1592073220,47,"ls -la"
 ?/ssh
 |2,1,1591881119,47,"ssh"
 ? yazio
@@ -94,8 +138,6 @@ $back\/yazio
 |2,1,1591354077,47,"18.205.93.0"
 ? \<exec\>
 |2,1,1591122964,,"\\<exec\\>"
-? @$
-|2,1,1591111438,,"@$"
 ?/xlsx
 |2,1,1590659136,47,"xlsx"
 ?/ppt
@@ -136,42 +178,12 @@ $back\/yazio
 |2,1,1589455009,,"\\<mode_system\\>"
 ? "
 |2,1,1589455007,,"\""
-? \<bindsym\>
-|2,1,1589454671,,"\\<bindsym\\>"
 ?/focused
 |2,1,1589454553,47,"focused"
 ?/split hl:q
 |2,1,1589454370,47,"split hl:q"
 ?/ö
 |2,1,1589452718,47,"ö"
-?/grave
-|2,1,1589389413,47,"grave"
-?/setopt7
-|2,1,1589382471,47,"setopt7"
-? \<xset\>
-|2,1,1588923865,,"\\<xset\\>"
-?/term
-|2,1,1588702068,47,"term"
-? \<xrandr\>
-|2,1,1588614768,,"\\<xrandr\\>"
-?/return
-|2,1,1588611971,47,"return"
-?/screen
-|2,1,1588611744,47,"screen"
-?/font
-|2,1,1588611659,47,"font"
-?/fon
-|2,1,1588611601,47,"fon"
-? \<home\>
-|2,1,1588608866,,"\\<home\\>"
-?/shot
-|2,1,1588600958,47,"shot"
-?/compdef
-|2,1,1588600045,47,"compdef"
-?/iconv
-|2,1,1588595222,47,"iconv"
-?/ext
-|2,1,1588595168,47,"ext"
 
 # Expression History (newest to oldest):
 
@@ -181,278 +193,611 @@ $back\/yazio
 
 # Registers:
 "0	LINE	0
-	Host bitbucket
-		HostName bitbucket.com
-|3,0,0,1,2,0,1591776938,"Host bitbucket","	HostName bitbucket.com"
+	tail = true
+|3,0,0,1,1,0,1592467671,"tail = true"
 ""1	LINE	0
-		IdentitiesOnly=yes
-|3,1,1,1,1,0,1591884065,"	IdentitiesOnly=yes"
+	set relativenumber
+|3,1,1,1,1,0,1592468848,"set relativenumber"
 "2	LINE	0
-	exec i3
-|3,0,2,1,1,0,1591881524,"exec i3"
+	
+|3,0,2,1,1,0,1592468630,""
 "3	LINE	0
-	#exec gnome-session
-|3,0,3,1,1,0,1591881503,"#exec gnome-session"
+	format-underline = #f90000
+|3,0,3,1,1,0,1592468629,"format-underline = #f90000"
 "4	LINE	0
-	
-	
-	#SSH Agent
-	if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-	    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
-	fi
-	if [[ ! "$SSH_AUTH_SOCK" ]]; then
-	    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
-	fi
-|3,0,4,1,9,0,1591881192,"","","#SSH Agent","if ! pgrep -u \"$USER\" ssh-agent > /dev/null; then","    ssh-agent > \"$XDG_RUNTIME_DIR/ssh-agent.env\"","fi","if [[ ! \"$SSH_AUTH_SOCK\" ]]; then","    source \"$XDG_RUNTIME_DIR/ssh-agent.env\" >/dev/null","fi"
+	format-prefix-foreground = ${colors.foreground-alt}
+|3,0,4,1,1,0,1592468629,"format-prefix-foreground = ${colors.foreground-alt}"
 "5	LINE	0
-		IdentityFile ~/.ssh//yazio
-|3,0,5,1,1,0,1591880471,"	IdentityFile ~/.ssh//yazio"
+	format-prefix = " "
+|3,0,5,1,1,0,1592468629,"format-prefix = \" \""
 "6	LINE	0
-	
-|3,0,6,1,1,0,1591869674,""
+	format-prefix = " "
+|3,0,6,1,1,0,1592468629,"format-prefix = \" \""
 "7	LINE	0
-	        ForwardAgent yes
-|3,0,7,1,1,0,1591869673,"        ForwardAgent yes"
+	type = internal/cpu
+|3,0,7,1,1,0,1592468628,"type = internal/cpu"
 "8	LINE	0
-	        User deployment-frontend
-|3,0,8,1,1,0,1591869673,"        User deployment-frontend"
+	[module/cpu]
+|3,0,8,1,1,0,1592468628,"[module/cpu]"
 "9	LINE	0
-	        CheckHostIp no
-|3,0,9,1,1,0,1591869673,"        CheckHostIp no"
+	[module/cpu]
+|3,0,9,1,1,0,1592468628,"[module/cpu]"
 "-	CHAR	0
-	back
-|3,0,36,0,1,0,1591880618,"back"
+	;
+|3,0,36,0,1,0,1592467342,";"
 
 # File marks:
-'0  1  0  ~/.zshrc
-|4,48,1,0,1592071536,"~/.zshrc"
-'1  1  0  ~/.oh-my-zsh/oh-my-zsh.sh
-|4,49,1,0,1592071498,"~/.oh-my-zsh/oh-my-zsh.sh"
-'2  14  60  ~/.aliases
-|4,50,14,60,1592070236,"~/.aliases"
-'3  51  0  ~/.ssh/config
-|4,51,51,0,1591974578,"~/.ssh/config"
-'4  51  25  ~/.ssh/config
-|4,52,51,25,1591942368,"~/.ssh/config"
-'5  52  8  ~/.ssh/config
-|4,53,52,8,1591942203,"~/.ssh/config"
-'6  52  8  ~/.ssh/config
-|4,54,52,8,1591942203,"~/.ssh/config"
-'7  52  8  ~/.ssh/config
-|4,55,52,8,1591942203,"~/.ssh/config"
-'8  52  8  ~/.ssh/config
-|4,56,52,8,1591942203,"~/.ssh/config"
-'9  51  20  ~/.ssh/config
-|4,57,51,20,1591942168,"~/.ssh/config"
+'0  1  0  ~/backup-dirs
+|4,48,1,0,1592477163,"~/backup-dirs"
+'1  2  16  ~/backup-dirs
+|4,49,2,16,1592476835,"~/backup-dirs"
+'2  2  16  ~/backup-dirs
+|4,50,2,16,1592476835,"~/backup-dirs"
+'3  9  9  ~/backup-dirs
+|4,51,9,9,1592475889,"~/backup-dirs"
+'4  8  9  ~/backup-dirs
+|4,52,8,9,1592475889,"~/backup-dirs"
+'5  9  9  ~/backup-dirs
+|4,53,9,9,1592475889,"~/backup-dirs"
+'6  8  9  ~/backup-dirs
+|4,54,8,9,1592475889,"~/backup-dirs"
+'7  1  0  /opt/backup-dirs
+|4,55,1,0,1592475672,"/opt/backup-dirs"
+'8  5  0  ~/backup-dirs
+|4,56,5,0,1592475503,"~/backup-dirs"
+'9  3  0  ~/backup-dirs
+|4,57,3,0,1592475503,"~/backup-dirs"
 
 # Jumplist (newest first):
--'  1  0  ~/.zshrc
-|4,39,1,0,1592071536,"~/.zshrc"
--'  1  0  ~/.oh-my-zsh/oh-my-zsh.sh
-|4,39,1,0,1592071498,"~/.oh-my-zsh/oh-my-zsh.sh"
--'  1  0  ~/.oh-my-zsh/oh-my-zsh.sh
-|4,39,1,0,1592071498,"~/.oh-my-zsh/oh-my-zsh.sh"
--'  14  60  ~/.aliases
-|4,39,14,60,1592070236,"~/.aliases"
--'  14  60  ~/.aliases
-|4,39,14,60,1592070236,"~/.aliases"
--'  14  60  ~/.aliases
-|4,39,14,60,1592070236,"~/.aliases"
--'  14  60  ~/.aliases
-|4,39,14,60,1592070236,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1592070219,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1592070219,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1592070219,"~/.aliases"
--'  1  0  ~/.aliases
-|4,39,1,0,1592070219,"~/.aliases"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  51  0  ~/.ssh/config
-|4,39,51,0,1591974578,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591955770,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  51  25  ~/.ssh/config
-|4,39,51,25,1591942368,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942358,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  52  8  ~/.ssh/config
-|4,39,52,8,1591942203,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1591942188,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  51  20  ~/.ssh/config
-|4,39,51,20,1591942168,"~/.ssh/config"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
--'  1  0  /etc/openvpn/client/yz-gitlab.conf
-|4,39,1,0,1591942011,"/etc/openvpn/client/yz-gitlab.conf"
+-'  1  0  ~/backup-dirs
+|4,39,1,0,1592477163,"~/backup-dirs"
+-'  2  16  ~/backup-dirs
+|4,39,2,16,1592476835,"~/backup-dirs"
+-'  2  16  ~/backup-dirs
+|4,39,2,16,1592476835,"~/backup-dirs"
+-'  1  0  ~/backup-dirs
+|4,39,1,0,1592475890,"~/backup-dirs"
+-'  9  9  ~/backup-dirs
+|4,39,9,9,1592475889,"~/backup-dirs"
+-'  8  9  ~/backup-dirs
+|4,39,8,9,1592475889,"~/backup-dirs"
+-'  9  9  ~/backup-dirs
+|4,39,9,9,1592475889,"~/backup-dirs"
+-'  8  9  ~/backup-dirs
+|4,39,8,9,1592475889,"~/backup-dirs"
+-'  1  0  ~/backup-dirs
+|4,39,1,0,1592475682,"~/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  1  0  /opt/backup-dirs
+|4,39,1,0,1592475672,"/opt/backup-dirs"
+-'  5  0  ~/backup-dirs
+|4,39,5,0,1592475503,"~/backup-dirs"
+-'  3  0  ~/backup-dirs
+|4,39,3,0,1592475503,"~/backup-dirs"
+-'  4  0  ~/backup-dirs
+|4,39,4,0,1592475503,"~/backup-dirs"
+-'  5  0  ~/backup-dirs
+|4,39,5,0,1592475503,"~/backup-dirs"
+-'  3  0  ~/backup-dirs
+|4,39,3,0,1592475503,"~/backup-dirs"
+-'  4  0  ~/backup-dirs
+|4,39,4,0,1592475503,"~/backup-dirs"
+-'  2  0  ~/backup-dirs
+|4,39,2,0,1592475503,"~/backup-dirs"
+-'  2  0  ~/backup-dirs
+|4,39,2,0,1592475503,"~/backup-dirs"
+-'  1  0  ~/backup-dirs
+|4,39,1,0,1592475461,"~/backup-dirs"
+-'  1  0  ~/backup-dirs
+|4,39,1,0,1592475461,"~/backup-dirs"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3768  0  ~/.zsh_history
+|4,39,3768,0,1592471631,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
+-'  1  0  ~/.zsh_history
+|4,39,1,0,1592471611,"~/.zsh_history"
+-'  3769  0  ~/.zsh_history
+|4,39,3769,0,1592471611,"~/.zsh_history"
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
-	*	1592071535	0
+> ~/backup-dirs
+	*	1592476836	0
 	"	1	0
-	.	140	0
+	^	2	17
+	.	2	16
+	+	1	9
+	+	5	0
+	+	4	5
+	+	3	4
+	+	1	10
+	+	10	0
+	+	2	16
+
+> /opt/backup-dirs
+	*	1592475669	0
+	"	1	0
+
+> ~/.zsh_history
+	*	1592471630	0
+	"	3768	0
+
+> ~/.bash_history
+	*	1592471600	0
+	"	1	0
+
+> ~/bash_history
+	*	1592471596	0
+	"	1	0
+
+> ~/history
+	*	1592471591	0
+	"	1	0
+
+> ~/.ssh/config
+	*	1592471179	0
+	"	62	26
+	^	62	27
+	.	62	27
+	+	17	24
+	+	31	0
+	+	30	23
+	+	46	24
+	+	52	23
+	+	12	0
+	+	6	0
+	+	7	0
+	+	11	16
+	+	7	13
+	+	11	12
+	+	8	25
+	+	9	0
+	+	8	5
+	+	8	25
+	+	7	19
+	+	1	14
+	+	65	0
+	+	53	0
+	+	65	0
+	+	2	22
+	+	1	18
+	+	2	0
+	+	8	0
+	+	6	0
+	+	17	32
+	+	12	0
+	+	13	19
+	+	13	0
+	+	17	1
+	+	13	0
+	+	17	1
+	+	10	25
+	+	17	25
+	+	24	25
+	+	29	25
+	+	45	32
+	+	51	25
+	+	4	25
+	+	17	30
+	+	24	0
+	+	13	0
+	+	4	0
+	+	10	0
+	+	17	0
+	+	24	0
+	+	29	0
+	+	45	0
+	+	51	0
+	+	17	0
+	+	16	20
+	+	10	20
+	+	24	21
+	+	27	0
+	+	51	25
+	+	49	0
+	+	51	25
+	+	65	0
+	+	55	24
+	+	53	0
+	+	54	0
+	+	55	0
+	+	55	24
+	+	56	0
+	+	56	25
+	+	55	19
+	+	57	26
+	+	53	0
+	+	54	14
+	+	56	8
+	+	63	0
+	+	62	27
+
+> ~/authorized_keys
+	*	1592470931	0
+	"	1	570
+	^	1	571
+	.	1	570
+	+	1	570
+
+> /tmp/authorized_keys
+	*	1592470540	0
+	"	1	570
+	^	1	571
+	.	1	570
+	+	1	570
+
+> ~/.config/polybar/config.ini
+	*	1592468883	0
+	"	27	0
+	^	235	0
+	.	286	0
+	+	39	10
+	+	60	10
+	+	73	39
+	+	72	43
+	+	103	0
+	+	72	43
+	+	85	51
+	+	86	16
+	+	143	20
+	+	138	13
+	+	145	15
+	+	150	20
+	+	152	12
+	+	157	17
+	+	159	0
+	+	286	0
+	+	286	30
+	+	86	42
+	+	315	11
+	+	316	16
+	+	319	25
+	+	320	10
+	+	183	30
+	+	86	33
+	+	183	0
+	+	182	0
+	+	184	0
+	+	185	0
+	+	234	0
+	+	286	0
+	n	85	31
+
+> ~/.vimrc
+	*	1592468860	0
+	"	4	21
+	^	4	22
+	.	4	22
+	+	1	25
+	+	2	0
+	+	4	27
+	+	4	9
+	+	4	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	4	22
+
+> ~/.config/polybar/backup/config_norman.ini
+	*	1592467559	0
+	"	224	14
+	.	226	0
+	+	10	0
+	+	226	0
+
+> ~/.config/polybar/scripts/color-switch.sh
+	*	1592466818	0
+	"	1	0
+
+> ~/.config/polybar/launch.sh
+	*	1592466601	0
+	"	11	42
+	^	8	60
+	.	11	42
+	+	1	15
+	+	1	22
+	+	12	0
+	+	8	26
+	+	11	13
+	+	12	1
+	+	8	55
+	+	11	42
+
+> ~/.config/polybar/backup/launch.sh
+	*	1592466528	0
+	"	1	0
+	^	8	74
+	.	8	0
+	+	8	0
+
+> ~/.config/polybar/backup/default-launch.sh
+	*	1592466414	0
+	"	2	0
+	^	11	17
+	.	11	16
+	+	8	72
+	+	11	16
+
+> ~/LinuxConfig/polybar-themes/polybar-2/config.ini
+	*	1592466335	0
+	"	59	11
+	^	59	11
+	.	59	10
+	+	59	10
+
+> /tmp/fz3temp-2/.htaccess
+	*	1592434704	0
+	"	1	0
+	^	9	21
+	.	9	20
+	+	1	0
+	+	3	49
+	+	4	31
+	+	7	21
+	+	8	49
+	+	9	20
+
+> /tmp/fz3temp-2/index.php
+	*	1592433851	0
+	"	17	22
+	^	17	23
+	.	17	22
+	+	17	0
+	+	18	0
+	+	17	22
+
+> ~/Downloads/.htaccess
+	*	1592433677	0
+	"	9	20
+	^	9	21
+	.	9	20
+	+	3	50
+	+	4	31
+	+	7	21
+	+	8	49
+	+	9	20
+
+> /usr/share/doc/polybar/config
+	*	1592432726	0
+	"	1	0
+
+> /etc/X11/xorg.conf.d/20.intel.conf
+	*	1592430300	0
+	"	8	26
+	^	8	27
+	.	8	27
+	+	5	9
+	+	3	16
+	+	4	24
+	+	8	27
+
+> ~/.config/polybar/config_norman.ini
+	*	1592429278	0
+	"	61	0
+	^	60	42
+	.	60	41
+	+	84	0
+	+	164	0
+	+	164	16
+	+	171	34
+	+	216	29
+	+	225	0
+	+	289	15
+	+	297	28
+	+	60	42
+	+	171	12
+	+	156	0
+	+	60	42
+	+	84	0
+	+	163	29
+	+	164	0
+	+	60	16
+	+	213	11
+	+	216	21
+	+	215	6
+	+	216	0
+	+	215	16
+	+	216	12
+	+	218	6
+	+	219	11
+	+	223	0
+	+	215	23
+	+	334	0
+	+	60	33
+	+	59	0
+	+	60	49
+	+	82	24
+	+	380	0
+	+	379	16
+	+	60	27
+	+	381	0
+	+	381	21
+	+	60	50
+	+	381	15
+	+	408	53
+	+	382	19
+	+	60	41
+
+> ~/.config/polybar/launch_polybar.sh
+	*	1592396354	0
+	"	1	0
+	^	11	84
+	.	11	83
+	+	11	48
+	+	9	0
+	+	8	39
+	+	11	28
+	+	8	58
+	+	8	0
+	+	6	59
+	+	8	21
+	+	11	10
+	+	7	0
+	+	8	29
+	+	11	16
+	+	8	30
+	+	11	17
+	+	8	69
+	+	11	52
+	+	8	96
+	+	11	83
+
+> ~/.zshrc
+	*	1592395776	0
+	"	154	0
+	^	154	1
+	.	154	1
 	+	1	0
 	+	6	18
 	+	6	0
@@ -503,132 +848,81 @@ $back\/yazio
 	+	101	0
 	+	113	0
 	+	140	0
+	+	141	42
+	+	154	1
 	p	48	0
 
-> ~/.oh-my-zsh/oh-my-zsh.sh
-	*	1592071495	0
+> ~/.config/polybar/config
+	*	1592395271	0
 	"	1	0
 
-> ~/.aliases
-	*	1592070235	0
-	"	14	60
-	^	14	61
-	.	14	60
-	+	1	26
-	+	1	1
+> ~/.config/polybar/bars.ini
+	*	1592395224	0
+	"	453	0
+
+> ~/.config/polybar/tester.ini
+	*	1592394658	0
+	"	134	0
+
+> ~/.config/polybar/user_modules.ini
+	*	1592394598	0
+	"	324	23
+	^	324	24
+	.	274	23
+	+	28	11
+	+	270	22
+	+	272	20
+	+	274	23
+
+> ~/.config/polybar/tester.sh
+	*	1592394495	0
+	"	1	0
+
+> ~/.config/polybar/tester.
+	*	1592394337	0
+	"	1	0
+
+> ~/LinuxConfig/polybar-themes/README.md
+	*	1592394153	0
+	"	17	0
+
+> /etc/lightdm/lightdm-gtk-greeter.conf
+	*	1592393867	0
+	"	1	0
+
+> /etc/lightdm/lightdm.conf
+	*	1592393623	0
+	"	32	0
+
+> ~/.X
+	*	1592393432	0
+	"	1	0
+
+> ~/.xinitrc
+	*	1592393411	0
+	"	1	0
+	^	3	17
+	.	1	0
 	+	1	0
-	+	10	65
-	+	10	17
-	+	11	30
-	+	12	51
-	+	13	30
-	+	14	60
-
-> ~/.ssh/config
-	*	1591955772	0
-	"	51	0
-	^	51	26
-	.	51	25
-	+	17	24
-	+	31	0
-	+	30	23
-	+	46	24
-	+	52	23
-	+	12	0
-	+	6	0
-	+	7	0
-	+	11	16
-	+	7	13
-	+	11	12
-	+	8	25
-	+	9	0
-	+	8	5
-	+	8	25
-	+	7	19
-	+	1	14
-	+	54	0
-	+	53	0
-	+	54	0
-	+	2	22
-	+	1	18
-	+	2	0
-	+	8	0
-	+	6	0
-	+	17	32
-	+	12	0
-	+	13	19
-	+	13	0
-	+	17	1
-	+	13	0
-	+	17	1
-	+	10	25
-	+	17	25
-	+	24	25
-	+	29	25
-	+	45	32
-	+	51	25
-	+	4	25
-	+	17	30
-	+	24	0
-	+	13	0
-	+	4	0
-	+	10	0
-	+	17	0
-	+	24	0
-	+	29	0
-	+	45	0
-	+	51	0
-	+	17	0
-	+	16	20
-	+	10	20
-	+	24	21
-	+	27	0
-	+	51	25
-	+	49	0
-	+	51	25
-
-> /etc/openvpn/client/yz-gitlab.conf
-	*	1591942010	0
-	"	1	0
-	^	7	8
-	.	7	7
-	+	11	32
-	+	12	33
-	+	13	32
-	+	11	3
-	+	13	27
-	+	7	7
-
-> /etc/openvpn/client/s-a.conf
-	*	1591942001	0
-	"	1	0
-
-> /etc/openvpn/client/s-f.conf
-	*	1591941979	0
-	"	1	0
-
-> /etc/openvpn/client/p-f.conf
-	*	1591941771	0
-	"	7	7
-	^	7	8
-	.	7	7
-	+	7	7
-
-> /usr/lib/systemd/system/timers.target
-	*	1591882077	0
-	"	1	0
-
-> /usr/lib/systemd/user/printer.target
-	*	1591881661	0
-	"	1	0
-
-> ~/user-preset
-	*	1591881640	0
-	"	1	0
+	+	1	44
+	+	1	82
+	+	1	101
+	+	1	25
+	+	1	45
+	+	1	84
+	+	1	25
+	+	1	41
+	+	1	84
+	+	1	42
+	+	1	17
+	+	1	25
+	+	1	0
+	+	3	16
+	+	1	0
 
 > ~/.Xresources
-	*	1591881554	0
-	"	1	2
+	*	1592393330	0
+	"	74	0
 	^	64	18
 	.	64	17
 	+	1	28
@@ -708,29 +1002,300 @@ $back\/yazio
 	+	59	22
 	+	64	17
 
-> ~/.X
-	*	1591881540	0
+> ~/Gdrive/Development/.config
+	*	1592382969	0
+	"	16	26
+	^	16	27
+	.	16	26
+	+	16	26
+
+> /usr/local/bin/setenv.sh
+	*	1592382222	0
+	"	24	0
+	.	25	0
+	+	25	0
+
+> /tmp/crontab.r8qvSb
+	*	1592337095	0
+	"	3	0
+	^	3	1
+	.	3	0
+	+	2	0
+	+	3	0
+
+> /tmp/crontab.LxpmUM
+	*	1592306492	0
+	"	3	2
+	^	3	0
+	.	2	2
+	+	2	0
+	+	2	74
+	+	3	0
+	+	3	85
+	+	2	2
+
+> ~/.ssh/known_hosts
+	*	1592256879	0
+	"	28	0
+	.	29	0
+	+	19	0
+	+	1	0
+	+	19	0
+	+	21	0
+	+	22	0
+	+	29	0
+
+> ~/backup.sh
+	*	1592218796	0
+	"	1	0
+	^	2	0
+	.	1	1
+	+	7	3
+	+	1	1
+
+> ~/.aliases
+	*	1592215311	0
+	"	14	18
+	^	14	19
+	.	14	18
+	+	1	26
+	+	1	1
+	+	1	0
+	+	10	65
+	+	10	17
+	+	11	30
+	+	11	51
+	+	12	30
+	+	13	60
+	+	11	0
+	+	12	31
+	+	13	0
+	+	14	18
+
+> ~/.config/i3/config
+	*	1592132179	0
+	"	221	0
+	^	218	1
+	.	218	0
+	+	67	0
+	+	65	19
+	+	62	29
+	+	73	0
+	+	74	0
+	+	75	0
+	+	76	0
+	+	99	0
+	+	73	13
+	+	74	13
+	+	76	22
+	+	85	19
+	+	86	19
+	+	87	20
+	+	87	58
+	+	85	20
+	+	88	0
+	+	85	18
+	+	36	9
+	+	36	0
+	+	28	30
+	+	184	0
+	+	36	0
+	+	184	0
+	+	169	16
+	+	169	26
+	+	169	8
+	+	169	7
+	+	169	20
+	+	170	17
+	+	171	19
+	+	172	20
+	+	211	60
+	+	204	39
+	+	209	0
+	+	207	13
+	+	169	0
+	+	207	0
+	+	208	18
+	+	215	28
+	+	215	35
+	+	215	5
+	+	215	29
+	+	215	76
+	+	215	0
+	+	215	13
+	+	215	0
+	+	224	29
+	+	224	27
+	+	215	48
+	+	224	0
+	+	216	29
+	+	223	27
+	+	216	57
+	+	216	88
+	+	221	39
+	+	223	0
+	+	216	29
+	+	215	29
+	+	216	29
+	+	215	28
+	+	221	0
+	+	224	0
+	+	222	29
+	+	216	28
+	+	216	27
+	+	215	0
+	+	216	14
+	+	222	15
+	+	223	28
+	+	217	32
+	+	223	31
+	+	223	51
+	+	224	0
+	+	223	50
+	+	224	0
+	+	224	25
+	+	218	0
+	+	218	39
+	+	220	0
+	+	218	0
+	+	218	56
+	+	218	85
+	+	218	33
+	+	224	0
+	+	218	19
+	+	217	0
+	+	225	1
+	+	217	0
+	+	218	0
+	+	218	19
+	+	215	0
+	+	218	0
+	+	220	0
+	+	218	56
+	+	218	27
+	+	225	0
+	+	218	73
+	+	215	0
+	+	218	0
+
+> ~/bin/set-laptop.sh
+	*	1592130972	0
+	"	2	0
+	^	1	38
+	.	1	37
+	+	3	59
+	+	1	14
+	+	2	14
+	+	3	62
+	+	1	37
+
+> ~/bin/setenv.sh
+	*	1592130617	0
+	"	15	14
+	^	15	15
+	.	15	15
+	+	28	0
+	+	14	15
+	+	15	15
+
+> ~/bin/setup.sh
+	*	1592130429	0
+	"	28	0
+	^	14	7
+	.	14	6
+	+	1	16
+	+	1	11
+	+	24	2
+	+	26	4
+	+	8	0
+	+	15	0
+	+	8	0
+	+	7	65
+	+	20	23
+	+	22	31
+	+	28	4
+	+	6	25
+	+	14	16
+	+	20	16
+	+	28	13
+	+	7	15
+	+	22	31
+	+	7	24
+	+	22	22
+	+	11	16
+	+	7	31
+	+	22	30
+	+	11	15
+	+	13	0
+	+	14	6
+
+> ~/bin/dunst-reload.sh
+	*	1592129786	0
+	"	1	3
+
+> /etc/X11/xorg.conf.d/10-monitor.conf
+	*	1592129671	0
 	"	1	0
 
-> ~/.xinitrc
-	*	1591881532	0
-	"	1	14
-	.	1	0
-	+	1	0
-	+	1	44
-	+	1	82
-	+	1	101
-	+	1	25
-	+	1	45
-	+	1	84
-	+	1	25
-	+	1	41
-	+	1	84
-	+	1	42
-	+	1	17
-	+	1	25
-	+	2	0
-	+	1	0
+> ~/.config/i3/workspace-3.json
+	*	1592129095	0
+	"	16	10
+
+> ~/.config/redshift/redshift.conf
+	*	1592074202	0
+	"	70	7
+	^	70	8
+	.	61	11
+	+	70	7
+	+	60	12
+	+	61	11
+
+> ~/.ssh/.config
+	*	1592072146	0
+	"	1	0
+
+> ~/.oh-my-zsh/oh-my-zsh.sh
+	*	1592071495	0
+	"	1	0
+
+> /etc/openvpn/client/yz-gitlab.conf
+	*	1591942010	0
+	"	1	0
+	^	7	8
+	.	7	7
+	+	11	32
+	+	12	33
+	+	13	32
+	+	11	3
+	+	13	27
+	+	7	7
+
+> /etc/openvpn/client/s-a.conf
+	*	1591942001	0
+	"	1	0
+
+> /etc/openvpn/client/s-f.conf
+	*	1591941979	0
+	"	1	0
+
+> /etc/openvpn/client/p-f.conf
+	*	1591941771	0
+	"	7	7
+	^	7	8
+	.	7	7
+	+	7	7
+
+> /usr/lib/systemd/system/timers.target
+	*	1591882077	0
+	"	1	0
+
+> /usr/lib/systemd/user/printer.target
+	*	1591881661	0
+	"	1	0
+
+> ~/user-preset
+	*	1591881640	0
+	"	1	0
 
 > ~/.pam_environment
 	*	1591881332	0
@@ -766,16 +1331,6 @@ $back\/yazio
 	+	1	0
 	+	1	568
 
-> ~/.ssh/known_hosts
-	*	1591777518	0
-	"	22	0
-	.	22	0
-	+	19	0
-	+	1	0
-	+	19	0
-	+	21	0
-	+	22	0
-
 > ~/notes.md
 	*	1591773836	0
 	"	4	10
@@ -788,13 +1343,6 @@ $back\/yazio
 > ~/TODO.md
 	*	1591773308	0
 	"	3	0
-
-> ~/.vimrc
-	*	1591773192	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
 
 > ~/.vim/.netrwhist
 	*	1591772994	0
@@ -840,112 +1388,6 @@ $back\/yazio
 	+	11	21
 	+	12	25
 	+	13	23
-
-> ~/.config/i3/config
-	*	1591712636	0
-	"	214	13
-	^	214	14
-	.	214	13
-	+	73	13
-	+	73	39
-	+	75	14
-	+	76	13
-	+	81	14
-	+	85	19
-	+	86	19
-	+	87	19
-	+	87	48
-	+	96	0
-	+	98	52
-	+	43	16
-	+	14	59
-	+	25	22
-	+	14	29
-	+	21	22
-	+	158	0
-	+	191	5
-	+	201	0
-	+	202	0
-	+	25	24
-	+	87	48
-	+	96	21
-	+	98	44
-	+	96	14
-	+	76	22
-	+	87	57
-	+	96	21
-	+	97	0
-	+	98	44
-	+	219	0
-	+	218	0
-	+	203	70
-	+	217	128
-	+	200	2
-	+	217	0
-	+	12	0
-	+	194	0
-	+	191	7
-	+	200	7
-	+	194	0
-	+	87	49
-	+	76	14
-	+	194	30
-	+	96	0
-	+	98	31
-	+	73	1
-	+	73	26
-	+	74	1
-	+	75	0
-	+	76	0
-	+	96	0
-	+	98	31
-	+	27	70
-	+	34	30
-	+	27	0
-	+	194	0
-	+	193	30
-	+	191	0
-	+	191	128
-	+	191	15
-	+	191	0
-	+	190	0
-	+	191	4
-	+	67	0
-	+	65	19
-	+	62	29
-	+	73	0
-	+	74	0
-	+	75	0
-	+	76	0
-	+	99	0
-	+	73	13
-	+	74	13
-	+	76	22
-	+	85	19
-	+	86	19
-	+	87	20
-	+	87	58
-	+	85	20
-	+	88	0
-	+	85	18
-	+	36	9
-	+	36	0
-	+	28	30
-	+	191	0
-	+	36	0
-	+	191	0
-	+	174	16
-	+	174	26
-	+	174	8
-	+	175	7
-	+	176	20
-	+	177	17
-	+	178	19
-	+	179	20
-	+	217	60
-	+	211	39
-	+	215	0
-	+	214	13
 
 > ~/Pictures/imagecompare.sh
 	*	1591711736	0
@@ -1044,13 +1486,6 @@ $back\/yazio
 	*	1591126944	0
 	"	2	0
 
-> ~/backup.sh
-	*	1591126324	0
-	"	6	3
-	^	6	4
-	.	6	3
-	+	6	3
-
 > ~/Development/yz-braintree/src/Controller/BraintreeController.php
 	*	1591125871	0
 	"	12	0
@@ -1058,15 +1493,6 @@ $back\/yazio
 > ~/Development/htdocs/yz_googleGPA/index.php
 	*	1591124909	0
 	"	21	0
-
-> /etc/X11/xorg.conf.d/20.intel.conf
-	*	1591117223	0
-	"	4	24
-	^	4	25
-	.	4	24
-	+	5	9
-	+	3	16
-	+	4	24
 
 > /etc/X11/xorg.conf.d/xorg.laptop.conf
 	*	1591109413	0
@@ -1085,10 +1511,6 @@ $back\/yazio
 	+	2	4
 	+	4	37
 	f	2	57
-
-> ~/.config/polybar/launch.sh
-	*	1591081369	0
-	"	12	0
 
 > /tmp/neomutt-dell-xps-norman-1000-85305-16884179671461556480
 	*	1591022431	0
@@ -1137,352 +1559,3 @@ $back\/yazio
 	+	10	55
 	+	14	72
 	+	15	6
-
-> /tmp/neomutt-dell-xps-norman-1000-124849-7267686170192320853
-	*	1590659734	0
-	"	3	5
-	^	3	6
-	.	3	5
-	+	3	5
-
-> ~/.config/ranger/rifle.conf
-	*	1590659152	0
-	"	159	101
-	^	159	102
-	.	159	101
-	+	160	88
-	+	156	53
-	+	158	101
-	+	159	101
-
-> /tmp/neomutt-dell-xps-norman-1000-63983-14038678691654772996
-	*	1590582232	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-63983-969407626419336033
-	*	1590582132	0
-	"	7	0
-	^	7	0
-	.	7	0
-	+	7	0
-
-> ~/.config/mutt/muttrc
-	*	1590504634	0
-	"	8	13
-	^	7	100
-	.	7	100
-	+	5	15
-	+	3	19
-	+	4	19
-	+	3	0
-	+	3	93
-	+	4	93
-	+	4	0
-	+	6	0
-	+	10	25
-	+	8	0
-	+	6	218
-	+	7	0
-	+	7	99
-	+	7	179
-	+	8	0
-	+	7	19
-	+	7	100
-
-> ~/.config/mutt/accounts/4-yazio.muttrc
-	*	1590504271	0
-	"	23	25
-	^	20	0
-	.	8	44
-	+	4	27
-	+	5	29
-	+	12	40
-	+	13	49
-	+	14	55
-	+	15	59
-	+	16	79
-	+	16	0
-	+	5	0
-	+	13	0
-	+	5	66
-	+	5	40
-	+	6	32
-	+	6	76
-	+	13	0
-	+	5	80
-	+	6	62
-	+	5	33
-	+	5	16
-	+	6	16
-	+	5	81
-	+	6	75
-	+	5	34
-	+	5	16
-	+	5	62
-	+	6	76
-	+	5	0
-	+	7	0
-	+	6	76
-	+	7	42
-	+	5	0
-	+	6	75
-	+	16	0
-	+	15	0
-	+	14	42
-	+	10	21
-	+	14	20
-	+	20	15
-	+	4	23
-	+	5	29
-	+	6	36
-	+	7	49
-	+	9	55
-	+	10	59
-	+	18	79
-	+	25	0
-	+	43	1
-	+	22	0
-	+	23	0
-	+	24	0
-	+	7	52
-	+	8	44
-
-> ~/.local/share/mail/4-yazio.muttrc
-	*	1590503848	0
-	"	1	0
-
-> ~/.config/mutt/accounts/gmailtest.muttrc
-	*	1590501783	0
-	"	7	0
-	^	19	15
-	.	19	15
-	+	4	29
-	+	18	19
-	+	5	35
-	+	6	33
-	+	8	0
-	+	9	0
-	+	15	0
-	+	17	0
-	+	8	0
-	+	17	0
-	+	10	0
-	+	9	0
-	+	7	21
-	+	19	15
-
-> ~/.mbsyncrc
-	*	1590501761	0
-	"	84	0
-
-> ~/.cache/mutt-wizard/norman-gmail/headers
-	*	1590501656	0
-	"	1	0
-
-> ~/.config/mutt/accounts/2-dm-norman.muttrc
-	*	1590501596	0
-	"	22	24
-
-> ~/.config/msmtp/config
-	*	1590501569	0
-	"	49	36
-	^	49	37
-	.	49	36
-	+	38	7
-	+	45	4
-	+	44	13
-	+	49	36
-
-> /tmp/neomutt-dell-xps-norman-1000-66874-10231386170882955309
-	*	1590501470	0
-	"	63	0
-	^	63	0
-	.	62	6
-	+	62	6
-
-> ~/.config/mutt/accounts/1-norman-gmail.muttrc
-	*	1590500937	0
-	"	18	0
-	^	28	43
-	.	28	43
-	+	21	23
-	+	12	27
-	+	26	43
-	+	27	43
-	+	28	43
-
-> ~/.config/mutt/accounts/test.muttrc
-	*	1590500176	0
-	"	1	0
-	^	4	30
-	.	4	29
-	+	30	22
-	+	3	27
-	+	7	44
-	+	8	31
-	+	9	28
-	+	10	31
-	+	13	35
-	+	4	29
-
-> accounts/4-yazio.muttrc
-	*	1590495202	0
-	"	1	0
-
-> ~/.config/mutt/accounts/body.txt
-	*	1590494999	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
-
-> /tmp/neomutt-dell-xps-norman-1000-57872-10268643364471413695
-	*	1590405335	0
-	"	10	5
-	^	10	6
-	.	10	6
-	+	5	71
-	+	10	6
-
-> /tmp/neomutt-dell-xps-norman-1000-26525-6537590109193355947
-	*	1590393908	0
-	"	1	0
-
-> /etc/asound.conf
-	*	1589994608	0
-	"	1	0
-
-> ~/.linux-setup.md
-	*	1589971071	0
-	"	7	14
-	^	7	40
-	.	7	39
-	+	6	27
-	+	7	39
-
-> ~/linux-setup.md
-	*	1589970831	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-298210-11151937722771897574
-	*	1589891117	0
-	"	7	0
-	^	7	0
-	.	6	6
-	+	9	0
-	+	2	0
-	+	2	27
-	+	2	0
-	+	6	6
-
-> /tmp/neomutt-dell-xps-norman-1000-298210-15365232445240410437
-	*	1589890420	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-297323-6618409350115148895
-	*	1589890126	0
-	"	7	0
-	^	7	0
-	.	6	6
-	+	6	5
-	+	5	1
-	+	6	6
-
-> /tmp/neomutt-dell-xps-norman-1000-145529-14605366094356368106
-	*	1589889733	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-145529-865831210952244345
-	*	1589875210	0
-	"	6	13
-	^	6	14
-	.	6	13
-	+	6	13
-
-> /tmp/neomutt-dell-xps-norman-1000-145529-1508737739394011644
-	*	1589870283	0
-	"	9	10
-	^	9	11
-	.	9	11
-	+	9	11
-
-> /tmp/neomutt-dell-xps-norman-1000-71626-5324984571260235534
-	*	1589807247	0
-	"	7	0
-	^	7	0
-	.	6	6
-	+	6	6
-
-> /tmp/neomutt-dell-xps-norman-1000-71626-4662638847094402635
-	*	1589801804	0
-	"	5	8
-	^	5	9
-	.	5	8
-	+	7	0
-	+	1	18
-	+	5	8
-
-> /tmp/neomutt-dell-xps-norman-1000-71626-5162122671096753233
-	*	1589792663	0
-	"	9	0
-	^	9	0
-	.	9	0
-	+	9	0
-
-> /tmp/neomutt-dell-xps-norman-1000-71626-3224219580345755199
-	*	1589790933	0
-	"	10	0
-	^	10	0
-	.	9	14
-	+	9	14
-
-> ~/.zshrc.pre-oh-my-zsh
-	*	1589790631	0
-	"	48	0
-	^	10	5
-	.	10	5
-	+	8	0
-	+	10	5
-
-> /tmp/crontab.iUx62u
-	*	1589789647	0
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	2
-
-> /usr/local/bin/mailsync
-	*	1589789348	0
-	"	37	18
-	^	37	19
-	.	37	18
-	+	37	18
-
-> ~/.notmuch-config
-	*	1589786556	0
-	"	5	21
-	^	5	22
-	.	5	21
-	+	5	21
-	+	10	0
-	+	5	21
-
-> /tmp/neomutt-dell-xps-norman-1000-45865-2668827188382078609
-	*	1589785933	0
-	"	16	15
-
-> /tmp/neomutt-dell-xps-norman-1000-45865-10143440572259668837
-	*	1589785461	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-45865-11704169488133659947
-	*	1589785454	0
-	"	1	0
-
-> accounts/1-norman-gmail.muttrc
-	*	1589784928	0
-	"	1	0
-
-> /tmp/neomutt-dell-xps-norman-1000-44218-7462563391252138547
-	*	1589784911	0
-	"	1	0

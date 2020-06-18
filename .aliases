@@ -8,7 +8,7 @@ alias vm_up="(cd /home/norman/Development/yz-frontend && vagrant up) && (cd /hom
 alias git_reset="git reset HEAD~1"
 alias jpg_reduce="convert -quality 85% src.jpg result.jpg"
 alias speedup-keys="xset r rate 250 60" 
-alias ls="ls -la --color=auto"
 alias enable-printer="cupsenable OfficeJet_Pro_6970"
 alias gcm="git checkout master"
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
+alias drb='dropbox-cli'

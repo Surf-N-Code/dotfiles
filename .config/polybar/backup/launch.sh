@@ -5,8 +5,8 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar main -c ~/.config/polybar/config.ini >>/tmp/polybar1.log 2>&1 &
+    MONITOR=$m polybar norman_1 -c ~/.config/polybar/config_norman.ini >>/tmp/polybar1.log 2>&1 &
   done
 else
-  polybar main -c ~/.config/polybar/config.ini >>/tmp/polybar1.log 2>&1 &
+  polybar norman_1 -c ~/.config/polybar/config_norman.ini >>/tmp/polybar1.log 2>&1 &
 fi
