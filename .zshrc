@@ -152,3 +152,32 @@ lc() {
     sleep $seconds
   )
 }
+
+dex-fn {
+        docker-compose exec $1 /bin/bash
+}
+
+function di-fn {
+        docker inspect $1
+}
+
+function dl-fn {
+        docker logs -f $1
+}
+
+function drun-fn {
+        docker run -it $1 /bin/bash
+}
+
+function dsr-fn {
+        docker stop $1;docker rm $1
+}
+
+function dsra-fn {
+        docker stop $(docker ps -a -q);
+        docker rm $(docker ps -a -q);
+}
+
+function dsa-fn {
+        docker stop $(docker ps -a -q);
+}
