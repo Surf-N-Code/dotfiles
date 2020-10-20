@@ -153,7 +153,11 @@ lc() {
   )
 }
 
-dex-fn {
+function dexb-fn {
+        docker-compose exec $1
+}
+
+function dex-fn {
         docker-compose exec $1 /bin/bash
 }
 
